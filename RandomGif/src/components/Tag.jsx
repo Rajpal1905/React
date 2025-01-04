@@ -4,7 +4,7 @@ import { Spinner } from './Spinner'
 import { useGif } from '../Hooks/useGif'
 
 
-const API_KEY = 'j3mUDaiyvciX9JlwmQAqxwdJAqKtu0e6'
+
 
 export const Tag = () => {
 
