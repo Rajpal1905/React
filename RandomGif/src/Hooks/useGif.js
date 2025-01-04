@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const API_KEY = 'j3mUDaiyvciX9JlwmQAqxwdJAqKtu0e6'
+const API_KEY = import.meta.env.VITE_GIPHY_API_KEY;
 
 export const useGif = (tag) => {
     const randomMemeUrl = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`
