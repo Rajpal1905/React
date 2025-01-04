@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px), radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #E8F0F8;  
+  animation: moveBackground 10s linear infinite, gradientPulse 6s ease-in-out infinite;
+}
+
+/* Move the background pattern */
+@keyframes moveBackground {
+  0% {
+      background-position: 0 0, 18px 18px;
+  }
+  50% {
+      background-position: 18px 18px, 36px 36px;
+  }
+  100% {
+      background-position: 0 0, 18px 18px;
+  }
+}
+
+/* Smooth color pulse effect */
+@keyframes gradientPulse {
+  0%, 100% {
+      background-color: #E8F0F8;
+  }
+  50% {
+      background-color: #B0D8FF;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
