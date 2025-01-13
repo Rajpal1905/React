@@ -4,8 +4,6 @@ import { Spinner } from './Spinner'
 import { useGif } from '../Hooks/useGif'
 
 
-
-
 export const Tag = () => {
 
   const [tag,setTag] = useState('laptop')
